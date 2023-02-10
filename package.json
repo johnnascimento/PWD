@@ -1,0 +1,33 @@
+{
+  "name": "pfw-udemy-course",
+  "version": "0.1.0",
+  "description": "This app is being developed for the purpose of studying PWD architecture, functionality and its features",
+  "main": "main.js",
+  "scripts": {
+    "test": "karma start"
+  },
+  "keywords": [
+    "pwd",
+    "progressive",
+    "web",
+    "application",
+    "app",
+    "application",
+    "progressive",
+    "web",
+    "development",
+    "frontend",
+    "backend",
+    "service",
+    "worker",
+    "web",
+    "workers",
+    "worklets"
+  ],
+  "author": "John Lenon Nascimento da Silva",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "https-server": "^0.1.2"
+  }
+}
