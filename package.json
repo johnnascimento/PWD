@@ -28,6 +28,6 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "https-server": "^0.1.2"
+    "node-static": "^0.7.11"
   }
 }
