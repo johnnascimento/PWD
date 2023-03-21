@@ -1,0 +1,7 @@
+body {
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: blue;
+    border: 5px solid yellow;
+}
