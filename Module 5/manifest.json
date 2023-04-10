@@ -1,10 +1,12 @@
 {
     "name": "Progressive Web App - JL",
     "short_name": "PWA-JL",
-    "theme_color": "#2196f3",
-    "background_color": "#2196f3",
+    "description": "Manifest created for handling native app feature covered in udemy's course",
     "display": "standalone",
     "start_url": "index.html",
+    "scope": "./",
+    "theme_color": "#2196f3",
+    "background_color": "#2196f3",
     "icons": [
         {
             "src": "icons/icon-72.png",

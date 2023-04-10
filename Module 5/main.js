@@ -4,7 +4,7 @@
 if (navigator.serviceWorker) {
 
   // Register the SW
-  navigator.serviceWorker.register('/sw.js').then((registration) => {
+  navigator.serviceWorker.register('sw.js').then((registration) => {
 
   }).catch(console.log);
 }
