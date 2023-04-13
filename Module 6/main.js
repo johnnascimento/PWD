@@ -1,3 +1,8 @@
+// Progressive Enhancement
+if (navigator.serviceWorker) {
+    // Register SW
+    navigator.serviceWorker.register('sw.js').catch(console.log);
+}
 
 // Giphy API object
 var giphy = {
@@ -10,40 +15,41 @@ var giphy = {
 
 // Update trending giphys
 function update() {
-
     // Toggle refresh state
-   $('#update .icon').toggleClass('d-none');
+    $('#update .icon').toggleClass('d-none');
 
     // Call Giphy API
-    $.get( giphy.url, giphy.query)
+    $.get(giphy.url, giphy.query)
 
         // Success
-        .done( function (res) {
+        .done(function (res) {
 
             // Empty Element
             $('#giphys').empty();
 
             // Loop Giphys
-            $.each( res.data, function (i, giphy) {
+            $.each(res.data, function (i, giphy) {
 
                 // Add Giphy HTML
                 $('#giphys').prepend(
                     '<div class="col-sm-6 col-md-4 col-lg-3 p-1">' +
-                        '<img class="w-100 img-fluid" src="' + giphy.images.downsized_large.url + '">' +
+                    '<img class="w-100 img-fluid" src="' + giphy.images.downsized_large.url + '">' +
                     '</div>'
                 );
             });
         })
 
         // Failure
-        .fail(function(){
-            
+        .fail(function () {
+
             $('.alert').slideDown();
-            setTimeout( function() { $('.alert').slideUp() }, 2000);
+            setTimeout(function () {
+                $('.alert').slideUp()
+            }, 2000);
         })
 
         // Complete
-        .always(function() {
+        .always(function () {
 
             // Re-Toggle refresh state
             $('#update .icon').toggleClass('d-none');
