@@ -27,9 +27,12 @@
   "author": "John Lenon Nascimento da Silva",
   "license": "ISC",
   "dependencies": {
+    "python": "0.0.4",
     "web-push": "^3.5.0"
   },
   "devDependencies": {
-    "node-static": "^0.7.11"
+    "https-server": "^0.1.2",
+    "node-static": "^0.7.11",
+    "static-https-server": "^1.0.1"
   }
 }

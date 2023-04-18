@@ -1,0 +1,19 @@
+// How to generate a public/private key
+// https://medium.com/webisora/how-to-enable-https-on-live-server-visual-studio-code-5659fbc5542c
+// https://knowledge.digicert.com/solution/SO27347.html
+// https://www.akadia.com/services/ssh_test_certificate.html
+// https://github.com/webisora/vscode-liveserver-https/blob/master/settings.json
+// https://gist.github.com/prof3ssorSt3v3/edb2632a362b3731274cfab84e9973f9
+// https://stackoverflow.com/questions/26790727/one-line-https-server
+
+{
+    "liveServer.settings.port": 5500,
+    "liveServer.settings.root": "/",
+    "liveServer.settings.CustomBrowser": "chrome",
+    "liveServer.settings.https": {
+        "enable": true, //set it true to enable the feature.
+        "cert": "../https/localhost.pem", //full path of the certificate
+        "key": "../https/localhost.key", //full path of the private key
+        "passphrase": "J0hn@010291"
+    }
+}
