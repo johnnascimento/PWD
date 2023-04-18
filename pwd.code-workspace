@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../Client-side Data Storage Ultimate Guide"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../LWC"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "PWD"
+	}
+}
